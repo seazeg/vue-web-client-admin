@@ -6,9 +6,9 @@ describe('Utils:validate', () => {
     expect(validUsername('xxxx')).toBe(false)
   })
   it('validURL', () => {
-    expect(validURL('https://github.com/seazeg/vue-element-admin')).toBe(true)
-    expect(validURL('http://github.com/seazeg/vue-element-admin')).toBe(true)
-    expect(validURL('github.com/seazeg/vue-element-admin')).toBe(false)
+    expect(validURL('https://github.com/seazeg/vue-web-client-admin')).toBe(true)
+    expect(validURL('http://github.com/seazeg/vue-web-client-admin')).toBe(true)
+    expect(validURL('github.com/seazeg/vue-web-client-admin')).toBe(false)
   })
   it('validLowerCase', () => {
     expect(validLowerCase('abc')).toBe(true)

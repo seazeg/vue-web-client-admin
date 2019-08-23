@@ -1,8 +1,8 @@
 <template>
   <div class="app-container documentation-container">
-    <a class="document-btn" target="_blank" href="https://seazeg.github.io/vue-element-admin-site/">{{ $t('documentation.documentation') }}</a>
-    <a class="document-btn" target="_blank" href="https://github.com/seazeg/vue-element-admin/">{{ $t('documentation.github') }}</a>
-    <a class="document-btn" target="_blank" href="https://seazeg.gitee.io/vue-element-admin-site/zh/">国内文档</a>
+    <a class="document-btn" target="_blank" href="https://seazeg.github.io/vue-web-client-admin-site/">{{ $t('documentation.documentation') }}</a>
+    <a class="document-btn" target="_blank" href="https://github.com/seazeg/vue-web-client-admin/">{{ $t('documentation.github') }}</a>
+    <a class="document-btn" target="_blank" href="https://seazeg.gitee.io/vue-web-client-admin-site/zh/">国内文档</a>
     <dropdown-menu :items="articleList" style="float:left;margin-left:50px;" title="系列文章" />
   </div>
 </template>

@@ -8,7 +8,7 @@
       <el-button :loading="downloadLoading" style="margin:0 0 20px 20px;" type="primary" icon="document" @click="handleDownload">
         {{ $t('excel.export') }} Excel
       </el-button>
-      <a href="https://seazeg.github.io/vue-element-admin-site/feature/component/excel.html" target="_blank" style="margin-left:15px;">
+      <a href="https://seazeg.github.io/vue-web-client-admin-site/feature/component/excel.html" target="_blank" style="margin-left:15px;">
         <el-tag type="info">Documentation</el-tag>
       </a>
     </div>

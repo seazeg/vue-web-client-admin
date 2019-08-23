@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       activeName: 'directly',
-      inputData: 'https://github.com/seazeg/vue-element-admin'
+      inputData: 'https://github.com/seazeg/vue-web-client-admin'
     }
   },
   methods: {

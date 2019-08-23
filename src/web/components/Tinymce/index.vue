@@ -10,7 +10,7 @@
 <script>
 /**
  * docs:
- * https://seazeg.github.io/vue-element-admin-site/feature/component/rich-editor.html#tinymce
+ * https://seazeg.github.io/vue-web-client-admin-site/feature/component/rich-editor.html#tinymce
  */
 import editorImage from './components/EditorImage'
 import plugins from './plugins'

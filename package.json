@@ -1,5 +1,5 @@
 {
-  "name": "vue-element-admin",
+  "name": "vue-web-client-admin",
   "version": "1.0.0",
   "description": "A magical vue admin. An out-of-box UI solution for enterprise applications. Newest development stack of vue. Lots of awesome features",
   "author": "Evan.G",
@@ -84,9 +84,6 @@
     "> 1%",
     "last 2 versions"
   ],
-  "bugs": {
-    "url": "https://github.com/seazeg/vue-element-admin/issues"
-  },
   "engines": {
     "node": ">=8.9",
     "npm": ">= 3.0.0"
@@ -115,6 +112,6 @@
   "main": "background.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seazeg/vue-element-admin.git"
+    "url": "git+https://github.com/seazeg/vue-web-client-admin.git"
   }
 }
