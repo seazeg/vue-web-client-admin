@@ -6,8 +6,8 @@
   "scripts": {
     "dev:web": "vue-cli-service serve",
     "dev:client": "vue-cli-service electron:serve",
+    "build":"npm run build:web;npm run build:client",
     "build:web": "vue-cli-service build",
-    "build:stage": "vue-cli-service build --mode staging",
     "build:client": "vue-cli-service electron:build --windows --macos",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps",

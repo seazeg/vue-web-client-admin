@@ -21,6 +21,3 @@ selenium-debug.log
 
 package-lock.json
 yarn.lock
-
-dist_web/
-dist_client/
