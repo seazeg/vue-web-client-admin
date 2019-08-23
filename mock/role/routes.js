@@ -515,7 +515,7 @@ export const asyncRoutes = [
     component: 'layout/Layout',
     children: [
       {
-        path: 'https://github.com/PanJiaChen/vue-element-admin',
+        path: 'https://github.com/seazeg/vue-element-admin',
         meta: { title: 'externalLink', icon: 'link' }
       }
     ]
