@@ -22,5 +22,5 @@ selenium-debug.log
 package-lock.json
 yarn.lock
 
-#Electron-builder output
-/dist_electron
+dist_web/
+dist_client/

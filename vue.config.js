@@ -22,7 +22,7 @@ module.exports = {
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
   publicPath: '/',
-  outputDir: 'dist',
+  outputDir: 'dist/web',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
@@ -72,11 +72,12 @@ module.exports = {
       },
       mainProcessFile: 'src/client/main.js',
       mainProcessWatch: ['src/client', 'src/web'],
+      outputDir:'dist/client'
     }
   },
   chainWebpack(config) {
-    config.plugins.delete('preload') // TODO: need test
-    config.plugins.delete('prefetch') // TODO: need test
+    // config.plugins.delete('preload') // TODO: need test
+    // config.plugins.delete('prefetch') // TODO: need test
 
     // set svg-sprite-loader
     config.module
