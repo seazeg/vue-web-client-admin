@@ -6,13 +6,13 @@
   "scripts": {
     "dev:web": "vue-cli-service serve",
     "dev:client": "vue-cli-service electron:serve",
-    "build":"npm run build:web;npm run build:client",
+    "build": "npm run build:web;npm run build:client",
     "build:web": "vue-cli-service build",
     "build:client": "vue-cli-service electron:build --windows --macos",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps",
     "preview": "node build/index.js --preview",
-    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
+    "svgo": "svgo -f src/assets/icons/svg --config=src/assets/icons/svgo.yml",
     "test:ci": "npm run lint && npm run test:unit",
     "test:unit": "jest --clearCache && vue-cli-service test:unit",
     "lint": "eslint --ext .js,.vue src"
@@ -24,6 +24,7 @@
     "driver.js": "0.9.5",
     "dropzone": "5.5.1",
     "echarts": "4.2.1",
+    "eg-utils": "^1.1.52",
     "element-ui": "2.7.0",
     "file-saver": "2.0.1",
     "fuse.js": "3.4.4",
