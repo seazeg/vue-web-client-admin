@@ -9,6 +9,10 @@ import {
   createProtocol,
   installVueDevtools
 } from 'vue-cli-plugin-electron-builder/lib'
+
+const os = require('os');
+const { ipcMain } = require('electron')
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -86,6 +90,18 @@ app.on('ready', async () => {
   }
   createWindow()
 })
+
+ipcMain.on('asynchronous-message', (event, arg) => {
+  event.reply('asynchronous-reply', {
+    name:os.hostname(),
+    type:os.type(),
+    platform:os.platform(),
+    arch:os.arch(),
+    release:os.release(),
+    G:(os.totalmem()/1024/1024/1024).toFixed(1)+'G'
+  })
+})
+
 
 // Exit cleanly on request from parent process in development mode.
 if (isDevelopment) {

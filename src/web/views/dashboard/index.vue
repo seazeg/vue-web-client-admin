@@ -26,6 +26,9 @@ export default {
     if (!this.roles.includes('admin')) {
       this.currentRole = 'editorDashboard'
     }
+  },
+    mounted () {
+    console.log(this.$store.state.tagsView.visitedViews);
   }
 }
 </script>

@@ -38,8 +38,7 @@ import Layout from '@/layout'
  * a base page that does not have permission requirements
  * all roles can be accessed
  */
-export const constantRoutes = [
-  {
+export const constantRoutes = [{
     path: '/redirect',
     component: Layout,
     hidden: true,
@@ -69,7 +68,21 @@ export const constantRoutes = [
     hidden: true
   },
   {
-    path: '',
+    path: '/test',
+    component: Layout,
+    redirect: 'guide',
+    children: [{
+      path: 'test',
+      component: () => import('@/views/test.vue'),
+      name: 'test',
+      meta: {
+        title: 'guide',
+        icon: 'guide'
+      }
+    }]
+  },
+  {
+    path: '/',
     component: Layout,
     redirect: 'dashboard',
     children: [{

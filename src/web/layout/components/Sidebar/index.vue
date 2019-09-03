@@ -13,6 +13,7 @@
         mode="vertical"
       >
         <sidebar-item v-for="route in permission_routes" :key="route.path" :item="route" :base-path="route.path" />
+      
       </el-menu>
     </el-scrollbar>
   </div>
@@ -49,6 +50,9 @@ export default {
     isCollapse() {
       return !this.sidebar.opened
     }
+  },
+  mounted(){
+    console.log(this.permission_routes);
   }
 }
 </script>
